@@ -21,15 +21,17 @@ module.exports = {
           },
         ],
       },
-      // css관련 웹팩 설정
+      //css관련 웹팩 설정
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      //image파일 관련
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
       },
+      //font & svg 파일 관련
       {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
